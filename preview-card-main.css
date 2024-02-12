@@ -1,0 +1,131 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+   --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --mainbg: hsl(217, 54%, 11%);
+    --cardbg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--mainbg);
+    font-family: "outfit","sans-serif";
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    Font-size : 18px;
+}
+main{
+    background: var(--mainbg);
+    border-radius: 1rem;
+    margin: 10px;
+    max-width: 26rem;
+    padding: 1.1rem;
+}
+.card-div{
+    background: var(--cardbg);
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+.equilibrium-image img{
+    max-width: 100%; 
+    border-radius: 0.5rem; 
+}
+.card-div .equilibrium-image{
+    position: relative;
+}
+.equilibrium-image div{
+    position: absolute;
+    top: 0;
+    background-color:hsl(178, 100%, 50%,60%); 
+    width: 100%;
+    border-radius: 0.5rem;
+    height: 100%;
+    opacity: 0;
+
+}
+.equilibrium-image div{
+   display: grid;
+   place-items: center;
+}
+h2{
+    font-weight: 600;
+    color: var(--White);
+    padding: 1.25rem 0;
+}
+
+.about-equilibrium p{
+    font-weight: 300;
+    color: hsl(215, 51%, 70%,60%);
+    line-height: 1.5rem;padding: 0 0 1rem 0;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 1rem 0;
+    border-bottom: 1px solid var(--line);
+
+}
+.flex p{
+    display: flex;
+    align-items: center;
+}
+.flex img{
+    margin-right: 0.5rem;
+}
+.clock-p{
+    color:hsl(215, 51%, 70%,60%); 
+}
+.ethereum-p p{
+    color: var(--Cyan);
+    font-weight: 400;
+   
+}
+.flex-image-avatar-name img {
+    width: 2.5rem;
+    border: 2px solid var(--White);
+    border-radius: 50rem;
+}
+.flex-image-avatar-name{
+    display: flex;
+    align-items: center;
+    padding: 1rem 0 0 0;
+    
+}
+.flex-image-avatar-name p{
+    margin-left: 1rem;
+    color: hsl(215, 51%, 70%,60%); 
+}
+.flex-image-avatar-name p span{
+    color: var(--White);
+    font-weight: 400;
+}
+.attribution{
+    color: hsl(215, 51%, 70%,60%);  ;
+    margin-top: 0;
+}
+
+/* hover effect */
+.equilibrium-image div:hover{
+    opacity:1;
+    cursor: pointer;
+}
+h2:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+.ethereum-p:hover{
+    cursor: pointer;
+}
+.flex-image-avatar-name p span:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
